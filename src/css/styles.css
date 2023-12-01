@@ -1,0 +1,614 @@
+.homepage {
+    display: flex;
+    background: rgb(3, 21, 39);
+    width: 100%;
+    overflow-x: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+    text-align: center;
+    text-align: center;
+
+    box-shadow: 2px 2px rgb(3, 21, 39);
+    border-radius: 0.6em;
+
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+
+}
+
+/* the navigation */
+
+.subnav-content {
+    background-color: white;
+    width: 100%;
+    z-index: 1;
+    padding: 20px 0;
+    display: none;
+    margin:0;
+}
+
+.subnav-content a {
+    color: var(--black);
+    text-decoration: none;
+    padding: 0.5em;
+    margin: 0;
+    text-align: center;
+    
+}
+
+.subnav:hover .subnav-content {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.subnav-content {
+    padding: 20px 0;
+    display: none;
+    background-color: #0083A3;
+    border-radius:0.5em;
+
+    /* var(--black); */
+}
+
+.subnav-content a {
+    color: white;
+}
+
+#inline {
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    padding-top: 0;
+   
+    color:rgb(191, 0, 255) ;
+}
+
+
+/*My Navigation  */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 1em;
+    width: 100%;
+    
+
+}
+
+/* the whole footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 2em;
+    padding: 0.5em;
+    padding-bottom: 2em;
+}
+
+
+
+/* The profile o */
+.profilepic {
+    width: 75%;
+    border-radius: 50%;
+    border: 3px solid rgb(153, 104, 169);
+    box-shadow: rgba(0, 0, 0, 0.5) 18px 16px 100px;
+
+}
+
+/* myfooter name */
+.myfootername {
+    margin: 0px;
+    font-family: Montserrat, sans-serif;
+    font-size: 1.25em;
+    color: grey;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* my nav name */
+.myname {
+    color: rgb(191, 0, 255);
+    padding: 1em;
+
+}
+
+
+.menuic {
+
+    opacity: 1;
+    width: 2em;
+    height: 1.5em;
+    padding: 0.5em;
+
+}
+
+.homecontent {
+    flex-direction: column-reverse;
+    padding: 0px 1em;
+    text-align: center;
+    gap: 2em;
+    margin-bottom: 1em;
+    z-index: 1;
+}
+
+.homedesc {
+    align-items: center;
+    gap: 1em;
+    text-align: center;
+
+}
+
+.greeting {
+    font-size: 2em;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.brief {
+    color: rgb(255, 255, 255);
+    line-height: 1.6em;
+    letter-spacing: 1.5px;
+    font-family: Roboto, sans-serif;
+    font-weight: 100;
+    font-size: 1em;
+}
+
+/* download resume button */
+.download {
+    display: flex;
+    width: 50%;
+    height: 2em;
+    align-content: center;
+    align-self: center;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    border: 3px solid rgb(191, 0, 255);
+    border-radius: 0.4em;
+}
+
+/* download resume text */
+.downloadresume {
+
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+
+}
+
+/* the icons at the footer */
+.socials {
+    stroke: aqua;
+    display: flex;
+    gap: 5em;
+    justify-content: center;
+}
+
+.aboutpage {
+    display: flex;
+    background: rgb(3, 21, 39);
+    width: 100%;
+    overflow-x: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     position: relative;
+    color: white;
+    text-align: center;
+
+    box-shadow: 2px 2px rgb(3, 21, 39);
+    border-radius: 0.6em;
+
+
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+
+}
+
+q {
+    margin-top: 0.5em;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: #FFFDD0;
+}
+
+.myvideo {
+    width: 23em;
+    height: 25em;
+}
+
+/* the about paragraph */
+.aboutparagraph {
+    font-family: sans-serif, "Times New Roman", Times, serif;
+    line-height: 1.6em;
+    letter-spacing: 1.3px;
+
+}
+
+/* the learn more text */
+.learnmore {
+    font-family: "sans-serif", Times, serif;
+
+}
+
+.myaboutheader {
+    padding-bottom: 1em;
+    margin: 0px;
+    font-family: Montserrat, sans-serif;
+
+    color: aqua;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* main skills page */
+.skillspage {
+    display: flex;
+    background-color: rgb(3, 21, 39);
+    
+    flex-wrap: wrap;
+    text-align: center;
+    color: white;
+
+}
+
+.skillstitle {
+
+    margin: 0px;
+    font-family: Montserrat, sans-serif;
+
+    color: aqua;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+}
+
+/* skills page main content */
+.skillsmain {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: rgb(255, 255, 255);
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 2em;
+}
+
+/* the skill icons */
+.skillic {
+    width: 24px;
+    height: 24px;
+}
+
+/* all skills without the text, the frontend, backend and others box*/
+.allskills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3em;
+}
+
+/* the all photo and the name  without the heading */
+.endlist {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    /* this is the margin to manipulate */
+    margin: 0.02em;
+    align-self: center;
+    margin-bottom: 1em;
+}
+
+/* the three skill boxes */
+.bigskillbox {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1em;
+    border: 1px solid aqua;
+    border-radius: 0.5em;
+    min-height: 18em;
+    padding-top: 1.5em;
+    box-shadow: aqua 2px 2px 6px;
+    transition: all 0.5s ease-in-out 0s;
+
+}
+
+/* space between table columns */
+.row {
+    display: flex;
+    gap: 0.3em;
+}
+
+/* the individual skill boxes */
+.skillbox {
+    display: flex;
+    width: 28vw;
+    height: 6vh;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2em;
+    padding: 0.1em 0.1em;
+    border: 1px solid aqua;
+    border-radius: 1em;
+    color: rgb(126, 144, 142);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out 0s;
+
+}
+
+/* the some of my working... text */
+.someskills {
+    font-size: 1.125em;
+    color: rgb(126, 144, 142);
+    padding-top: 0.5em;
+    padding-bottom: 0.6em;
+    font-weight: 500;
+    margin: 0px 0px 1em;
+
+}
+
+.endtitle {
+    margin: 0px;
+    color: aqua;
+    opacity: 0.5;
+    font-size: 1.375em;
+}
+
+.frontendlist {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25em;
+    align-self: center;
+    margin-bottom: 1em;
+}
+
+td {
+
+    margin: auto;
+    padding: 0.1em;
+}
+
+
+
+
+
+.projectspage {
+    display: flex;
+    background: rgb(3, 21, 39);
+    width: 100%;
+    overflow-x: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 0;
+    border-radius: 2px 2px;
+    box-shadow: 2px 2px rgb(3, 21, 39);
+    border-radius: 0.6em;
+    
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+
+}
+
+/* the projects header */
+.projectsheader {
+    margin: 0px;
+    font-family: Montserrat, sans-serif;
+
+    color: aqua;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* the list of tools used in the projects */
+.projecttoollist {
+    display: flex;
+    padding: 0;
+    gap: 4em;
+    justify-content: space-around;
+    text-align: center;
+}
+
+/* I changed the list Color */
+ul {
+    list-style: none;
+}
+
+ul li::before {
+    content: "\2022";
+    color: aqua;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+
+}
+
+.projectimages {
+    width: 358px;
+    height: 258px;
+}
+
+.projectdesc {
+    font-family: sans-serif, Times, serif;
+    text-align: center;
+    margin: 0.5em;
+    padding: 0.5em;
+    font-size: 0.95em;
+
+}
+
+.projtitle {
+    margin: 0px;
+    font-family: sans-serif, Times, serif;
+    padding-top: 1em;
+    font-size: 1em;
+    color: aqua;
+    opacity: 0.85;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+}
+
+.contactpage {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(3, 21, 39);
+    color: white;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    align-items: center;
+   
+    box-shadow: 2px 2px rgb(3, 21, 39);
+    border-radius: 0.6em;
+    
+
+}
+
+/* the want to contact text */
+.wantcontact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    font-family: sans-serif, Times, serif;
+    margin: 1em;
+}
+
+/* wanted reset link color */
+a:link {
+    text-decoration: none;
+}
+
+/* the svg contact icons */
+.conicon {
+    fill: aqua;
+    width: 28px;
+    height: 28px;
+}
+
+/* the four headers */
+.thelittleheads {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: aqua;
+}
+
+/* the second text */
+.text {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: white;
+    opacity: 0.7;
+
+}
+
+/* the four boxes */
+.conbox {
+    border: 0.05em solid aqua;
+    padding: 0.2em;
+    margin: 0.5em;
+}
+
+/* to address the individual table data */
+
+#telegram,
+#email,
+#phone,
+#location {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 10em;
+    padding-top: 0.5em;
+
+}
+
+/* the two rows of phone and email */
+.phoneemail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* the location and telegram */
+.locationtelegram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+/* the contact form */
+.form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* style the contact form */
+input,
+textarea {
+    color: black;
+    opacity: 0.4;
+    width: 15em;
+    margin: 0.5em;
+    padding: 0.5em;
+    border-radius: 0.4em;
+    border: 0.15em solid aqua;
+}
+
+/* the placeholder texts in the contact form */
+::placeholder {
+    color: black;
+}
+
+/* the submit button */
+#submitbutton {
+    border: 0.1em solid rgb(191, 0, 255);
+    color: rgb(191, 0, 255);
+    opacity: 1;
+    background-color: transparent;
+    width: 60%;
+
+}
+
+.contactheader {
+    padding-top: 1em;
+    margin: 0px;
+    font-family: Montserrat, sans-serif;
+
+    color: aqua;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.portfolio {
+    background-color: #FEFBEA;
+    padding: 0.1em;
+}
