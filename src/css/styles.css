@@ -1,0 +1,664 @@
+
+.homepage{
+    display: grid;
+    background: rgb(3, 21, 39);
+    width: 100%;
+    overflow-x: hidden;
+    
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    color: white;
+    text-align: center;
+    box-shadow: 2px 2px rgb(3, 21, 39) ;
+    border-radius: 0.6em;
+ 
+    
+}
+
+ /* the navigation */
+
+.subnav-content {
+    background-color: white;
+    width: 100%;
+    z-index: 1;
+    padding: 20px 0;
+    display: none;
+    margin:0;
+}
+
+.subnav-content a {
+    color: var(--black);
+    text-decoration: none;
+    padding: 0.5em;
+    margin: 0;
+    text-align: center;
+    
+}
+
+.subnav:hover .subnav-content {
+    display: grid;
+    margin: 0;
+}
+
+.subnav-content {
+    padding: 20px 0;
+    display: none;
+    background-color: #0083A3;
+    border-radius:0.5em;
+
+    /* var(--black); */
+}
+
+.subnav-content a {
+    color: white;
+}
+.subnav{
+    grid-column-start: 8;
+}
+
+#inline {
+    display: grid;
+    grid-column-start: 1;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    padding-top: 0;
+   
+    color:rgb(191, 0, 255) ;
+}
+
+
+/*My Navigation  */
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    align-content: center;
+    padding: 1em;
+    padding-left: 0.5em;
+    padding-left: 0.5em;
+    
+
+}
+
+/* the whole footer */
+footer{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 2em;
+     padding: 1em;
+     padding-bottom: 1em;
+}
+
+   
+/* The profile o */
+.profilepic{
+    width: 75%;
+    border-radius: 50%;
+    border: 3px solid rgb(153, 104, 169);
+    box-shadow: rgba(0, 0, 0, 0.5) 18px 16px 100px;
+
+}
+/* myfooter name */
+.myfootername{
+    margin: 0px;
+    font-family: Montserrat, sans-serif;
+    font-size: 1.25em;
+    color: grey;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+/* my nav name */
+.myname{
+    grid-column-start: 1;
+    color: rgb(191,0,255);
+    padding:0.5em;
+}
+.threelines{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    padding-right: 0.5em;
+    
+}
+
+
+.menuic{
+    opacity: 1;
+    width: 2em;
+    height: 1.5em;
+    padding: 0.5em;
+
+}
+.homecontent{
+    padding: 0px 1em;
+    text-align: center;
+    gap: 2em;
+    margin-bottom: 1em;
+    z-index: 1;
+}
+.homedesc{
+    align-items: center;
+    gap: 1em;
+    text-align: center;
+
+}
+.greeting{
+    font-size: 2em;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.brief{
+    color: rgb(255, 255, 255);
+    line-height: 1.6em;
+    letter-spacing: 1.5px;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 1em;
+}
+/* download resume button */
+.download{
+    display: grid;
+    width: 50%;
+    height: 2em;
+    align-content: center;
+    align-self: center;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    border: 3px solid rgb(191,0,255);
+    border-radius: 0.4em;
+}
+/* download resume text */
+.downloadresume{
+   
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+   
+}
+/* the icons at the footer */
+.socials{
+    stroke: aqua;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   
+    gap: 5em;
+    /* justify-content: center; */
+}
+.copyrights{
+    align-content: center;
+}
+
+.aboutpage{
+    display: grid;
+    background: rgb(3, 21, 39);
+    width: 100%;
+    overflow-x: hidden;
+    
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    color: white;
+    text-align: center;
+    box-shadow: 2px 2px rgb(3, 21, 39) ;
+    border-radius: 0.6em;
+    
+ 
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+  
+
+    
+
+}
+/* the video in about */
+.myvideo{
+    width: 23em;
+    height: 25em;
+   
+}
+/* the about paragraph */
+.aboutparagraph{
+    font-family: sans-serif;
+    line-height: 1.6em;
+    letter-spacing: 1.3px;
+    
+
+}
+q{
+    margin-top: 0.5em;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: #FFFDD0;
+}
+.learnmore{
+    font-family: 'sans-serif','Times New Roman', Times, serif;
+}
+
+.myaboutheader{
+    margin: 0px;
+    font-family: Montserrat, sans-serif;
+    
+    color: aqua;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding-bottom: 1.5em;
+
+}
+/* main skills page */
+.skillspage {
+    display: grid;
+    background-color: rgb(3, 21, 39);
+    text-align: center;
+    color: white;
+    box-shadow: 2px 2px rgb(3, 21, 39) ;
+    border-radius: 0.6em;
+  
+    padding-bottom: 1em;
+    margin-bottom: 3em;
+
+}
+.skillstitle{
+    margin: 0px;
+    font-family: Montserrat, sans-serif;
+    color: aqua;
+    font-weight: 600;
+    letter-spacing: 1px;   
+
+}
+/* skills page main content */
+.skillsmain{
+    display: grid;
+    background: rgb(3, 21, 39);
+    width: 100%;
+    overflow-x: hidden;
+    
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+    text-align: center;
+    box-shadow: 2px 2px rgb(3, 21, 39) ;
+    border-radius: 0.6em;
+ 
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+/* the skill icons */
+.skillic{
+    width: 20px;
+    height: 20px;
+}
+
+/* all skills without the text, the frontend, backend and others box*/
+.allskills{
+    display: grid;
+    justify-content: center;
+    gap: 3em;
+}
+/* the all photo and the name  without the heading */
+.endlist{
+    display: grid;
+    align-items: center;
+    justify-content: space-evenly;
+    align-self: center;
+
+    gap: 2em;
+    /* this is the margin to manipulate */
+    
+    align-self: center;
+    margin-bottom: 1em;
+}
+.htmljava{
+    display: grid;
+    
+}
+
+/* the three skill boxes */
+.bigskillbox{
+
+    display: grid;
+    
+    /* grid-template-columns: 1fr 100px 1fr;
+    grid-template-rows: 1fr 100px 1fr; */
+    gap: 1em;
+    border: 1px solid aqua;
+    border-radius: 0.5em;
+    min-height: 18em;
+    padding-top: 1.5em;
+    box-shadow: aqua 2px 2px 6px;
+    transition: all 0.5s ease-in-out 0s;
+ 
+   
+    align-content: center;
+
+
+}
+.data{
+    display: grid;
+    /* padding: 0.5em 1em; */
+    font-size: smaller;
+    gap: 10px;
+    
+}
+
+
+.trouble{
+    display: grid;
+   padding-left: 5em;
+   justify-content: space-between;
+   
+    align-self: center;
+
+}
+/* space between table columns */
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.45em;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+}
+
+
+/* the individual skill boxes */
+.skillbox{
+    display: grid;
+    grid-template-columns: 10% 80%;
+   
+    width: 22vw;
+    height: 5vh;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4em;
+    padding: 0.1em 0.1em;
+    border: 1px solid aqua;
+    border-radius: 1em;
+    color: rgb(126, 144, 142);
+    cursor: pointer;
+    transition: all 0.5s ease-in-out 0s;
+
+}
+
+/* the some of my working... text */
+.someskills {
+    font-size: 1.125em;
+    color: rgb(126, 144, 142);
+    padding-top: 0.5em;
+    padding-bottom: 0.6em;
+    font-weight: 500;
+    margin: 0px 0px 1em;
+
+}
+
+.endtitle{
+    margin: 0px;
+    color: aqua;
+    opacity: 0.5;
+    font-size: 1.375em;
+}
+.frontendlist{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25em;
+    align-self: center;
+    margin-bottom: 1em;
+}
+td{
+    /* width: 20em; */
+    width: fit-content;
+    margin: auto;
+    padding: 0;
+}
+/* the whole page */
+.projectspage {
+    display: grid;
+    background: rgb(3, 21, 39);
+    width: 100%;
+    overflow-x: hidden;
+
+    justify-content: center;
+    align-items: center;
+    
+    position: relative;
+    color: white;
+    text-align: center;
+    border-radius: 2px;
+    box-shadow: 2px 2px rgb(3, 21, 39) ;
+    border-radius: 0.6em;
+   
+    margin-bottom: 1em;
+}
+/* the list */
+.projecttoollist {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0;
+
+}
+
+/* to change the list color */
+ul {
+    list-style: none;
+}
+
+ul li::before {
+    content: "\2022";
+    color: aqua;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+
+}
+/* changed the size of the images */
+
+.projectimages {
+    width: 358px;
+    height: 258px;
+}
+
+/* the projects header */
+.projectsheader {
+    margin: 0px;
+    font-family: 'sans-serif','Times New Roman', Times, serif;
+    font-size: 1.5em;
+    color: aqua;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+
+
+.projectdesc {
+    font-family:  'sans-serif','Times New Roman', Times, serif;
+    text-align: center;
+    margin: 0.5em;
+    padding: 0.5em;
+    font-size: 0.95em;
+
+}
+
+.projtitle {
+    margin: 0px;
+    font-family: Montserrat, sans-serif;
+    padding-top: 1em;
+    font-size: 1em;
+    color: aqua;
+    opacity: 0.85;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+}
+
+.contactpage{
+    display: grid;
+    background-color: rgb(3, 21, 39);
+    color: white;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    padding-left: 1.5em;
+    padding-bottom: 2em;
+    
+    box-shadow: 2px 2px rgb(3, 21, 39) ;
+    border-radius: 0.6em;
+   
+   
+}
+
+/* the want to contact text */
+.wantcontact{
+   display: grid;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    font-family: 'sans-serif', 'Times New Roman', Times, serif;
+    margin: 1em;
+}
+/* wanted reset link color */
+a:link{
+    text-decoration: none;
+}
+/* the svg contact icons */
+.conicon{
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    fill: aqua;
+    width: 28px;
+    height: 28px;
+}
+
+/* the four headers */
+.thelittleheads{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: aqua;
+}
+/* the second text */
+.text{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: white;
+    opacity: 0.7;
+
+}
+
+/* the four boxes */
+.conbox{
+    align-self: center;
+    justify-content: center;
+    border: 0.05em solid aqua;
+   padding: 0.2em;
+   margin: 0.5em;
+}
+
+/* to address the individual table data */
+
+#telegram, #email, #phone,#location{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 10em;
+    padding-top: 0.5em;
+  
+}
+
+/* the two rows of phone and email */
+.phoneemail{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* the location and telegram */
+.locationtelegram{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+/* the contact form */
+.form{
+    display: grid;
+
+
+}
+/* style the contact form */
+input, textarea{
+    color:black;
+    opacity: 0.4;
+    width: 60%;
+    margin: 0.5em;
+    padding: 0.5em;
+    border-radius: 0.4em;
+    border: 0.3em solid aqua;
+}
+/* the placeholder texts in the contact form */
+::placeholder{
+    color: black;
+}
+/* the submit button */
+#submitbutton{
+    border: 0.1em solid rgb(191,0,255);
+    color:rgb(191,0,255);
+    opacity: 1;
+    background-color: transparent;
+    width: 50%;
+
+}
+
+.contactheader{
+    margin: 0px;
+    font-family: Montserrat, sans-serif;
+    font-size: 1.5em;
+    color: aqua;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.table{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 0;
+    
+}
+.portfolio{
+    background-color:#FEFBEA;
+    padding: 0.1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
