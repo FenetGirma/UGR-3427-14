@@ -1,109 +1,249 @@
-.homepage {
-    display: flex;
-    background: rgb(3, 21, 39);
-    width: 100%;
-    overflow-x: hidden;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    color: white;
-    text-align: center;
-    text-align: center;
-
-    box-shadow: 2px 2px rgb(3, 21, 39);
-    border-radius: 0.6em;
-
-    padding-bottom: 1em;
-    margin-bottom: 1em;
-
-}
-
-/* the navigation */
-
-.subnav-content {
-    background-color: white;
-    width: 100%;
-    z-index: 1;
-    padding: 20px 0;
-    display: none;
-    margin:0;
-}
-
-.subnav-content a {
-    color: var(--black);
-    text-decoration: none;
-    padding: 0.5em;
+body {
     margin: 0;
-    text-align: center;
-    
+    padding: 0;
 }
 
-.subnav:hover .subnav-content {
+html {
+    height: 100vh;
+    width: 100vw;
+}
+
+@media only screen and (max-width:767px) {
+    .about__achievements{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* the phone landscape */
+@media only screen and (min-width:768px) and (max-width:1024px) and (orientation:landscape) {
+    .projects__kick {
+        display: flex;
+        flex-direction: column;
+    }
+    .projects__track{
+        display: flex;
+        flex-direction: column;
+    }
+    .projects__aloha{
+        display: flex;
+        flex-direction: column;
+    }
+    }
+        
+
+
+
+/* the laptop and tablet commonalities like the socials footer.*/
+@media only screen and (min-width:768px) {
+    .footer__socials {
+
+        display: flex;
+        flex-direction: column;
+        align-self: flex-end;
+        /* padding-right: 0.5em;   */
+        position: absolute;
+        align-items: center;
+        right: 1rem;
+
+    }
+
+    .footer__socials__line {
+        background-color: aqua;
+        width: 0.05em;
+        height: 6rem;
+        margin: 1.25em;
+
+    }
+
+    .home {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .home__main {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+
+
+    }
+
+    .home__main__desc {
+        align-self: center;
+    }
+
+
+
+    /* the skills page media screen */
+    .skills__main__whole__threeboxes__everyend {
+        width: 35%;
+
+    }
+
+    /* The projects page media screen */
+    .projects__aloha {
+        margin-left: 1em;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .projects__track {
+        margin-right: 1em;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .projects__kick {
+        margin-left: 1em;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+    }
+
+
+
+    /* the contact page media screen */
+    .contact__table {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.25rem;
+    }
+
+    .contact{
+        overflow-x: hidden;
+        height: 100vh;
+        width: 100vw;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* displayed none bc the line was affecting the alignment */
+    .footer__socials__line {
+        display: none;
+    }
+}
+
+/* Devices below the desktop size should not display the navlist */
+@media only screen and (max-width:1024px) {
+    .nav__navlist {
+        display: none;
+    }
+}
+
+/* the navgation list is hsown for desktop devices */
+
+@media only screen and (min-width:1024px) {
+    body {
+        font-size: 1.1rem;
+    }
+
+    .nav__subnav {
+        display: none;
+    }
+
+    .nav__navlist {
+        display: flex;
+        gap: 2rem;
+        color: aqua;
+    }
+
+    .nav__navlist a {
+        text-decoration: none;
+        color: rgb(191, 0, 255);
+    }
+
+    .nav__navlist a:hover {
+        color: aqua;
+        opacity: 0.5;
+    }
+
+    .nav__navlist a:active {
+        color: aqua;
+
+    }
+
+}
+
+
+
+
+
+/* THE COMMONALITIES THROUGHOUT ALL PAGES */
+/*My Navigation  */
+.nav {
     display: flex;
-    flex-direction: column;
-    margin: 0;
+    justify-content: space-between;
+    align-content: center;
+
+    padding: 1em;
+    width: 95%;
 }
 
-.subnav-content {
-    padding: 20px 0;
-    display: none;
-    background-color: #0083A3;
-    border-radius:0.5em;
 
-    /* var(--black); */
-}
+/* the nav name */
+.nav__brand {
 
-.subnav-content a {
-    color: white;
-}
-
-#inline {
     text-align: center;
     font-size: large;
     font-weight: bold;
     padding-top: 0;
-   
-    color:rgb(191, 0, 255) ;
+    color: rgb(191, 0, 255);
 }
 
 
-/*My Navigation  */
-nav {
+
+
+.nav__subnav:hover .nav__subnav__content {
     display: flex;
-    justify-content: space-between;
-    align-content: center;
-    padding: 1em;
+    flex-direction: column;
+    margin: 0;
+}
+
+.nav__subnav__content {
+    padding: 20px 0;
+    display: none;
+    background-color: #0083A3;
+    border-radius: 0.5em;
     width: 100%;
-    
+    z-index: 1;
+    padding: 20px 0;
+    display: none;
+    margin: 0;
+
+
 
 }
 
-/* the whole footer */
-footer {
+.nav__subnav__content a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em;
+    margin: 0;
+    text-align: center;
+
+}
+
+.footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     width: 100%;
     height: 2em;
-    padding: 0.5em;
+    /* res changed the padding from 0.5em to 4rem */
+    padding-top: 10rem;
     padding-bottom: 2em;
-}
-
-
-
-/* The profile o */
-.profilepic {
-    width: 75%;
-    border-radius: 50%;
-    border: 3px solid rgb(153, 104, 169);
-    box-shadow: rgba(0, 0, 0, 0.5) 18px 16px 100px;
+    justify-content: flex-end;
 
 }
+
 
 /* myfooter name */
-.myfootername {
+.footer__name {
     margin: 0px;
     font-family: Montserrat, sans-serif;
     font-size: 1.25em;
@@ -112,25 +252,44 @@ footer {
     letter-spacing: 1px;
 }
 
-/* my nav name */
-.myname {
-    color: rgb(191, 0, 255);
-    padding: 1em;
-
+/* the icons at the footer */
+.footer__socials {
+    stroke: aqua;
+    display: flex;
+    /* res changed the gap from 5em to 2rem */
+    gap: 2rem;
+    justify-content: center;
+    /* res added this here to align the line and the social icons */
+    align-items: center;
 }
 
 
-.menuic {
 
-    opacity: 1;
-    width: 2em;
-    height: 1.5em;
-    padding: 0.5em;
+/* THE HOME PAGE */
 
+.home {
+    display: flex;
+    background: rgb(3, 21, 39);
+    width: 100%;
+    /* added the gap for gap among the major elements */
+    gap: 5rem;
+    overflow-x: hidden;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    position: relative;
+    color: white;
+    text-align: center;
+    text-align: center;
+
+    box-shadow: 2px 2px rgb(3, 21, 39);
+    border-radius: 0.6em;
 }
 
-.homecontent {
-    flex-direction: column-reverse;
+
+
+.home__main {
+    /* flex-direction: column-reverse; */
     padding: 0px 1em;
     text-align: center;
     gap: 2em;
@@ -138,21 +297,32 @@ footer {
     z-index: 1;
 }
 
-.homedesc {
-    align-items: center;
-    gap: 1em;
-    text-align: center;
+/* The profile picture */
+.home__main__profilepic {
+    /* I changed the pixel to view width */
+    width: 40vw;
+    border-radius: 50%;
+    border: 3px solid rgb(153, 104, 169);
+    box-shadow: rgba(0, 0, 0, 0.5) 18px 16px 100px;
 
 }
 
-.greeting {
+.home__main__desc {
+    align-items: center;
+    gap: 1em;
+    text-align: center;
+}
+
+
+.home__main__desc__greeting {
     font-size: 2em;
     font-family: Montserrat, sans-serif;
     font-weight: bold;
     color: rgb(255, 255, 255);
 }
 
-.brief {
+
+.home__main__desc__brief {
     color: rgb(255, 255, 255);
     line-height: 1.6em;
     letter-spacing: 1.5px;
@@ -161,8 +331,9 @@ footer {
     font-size: 1em;
 }
 
+
 /* download resume button */
-.download {
+.home__main__desc__download {
     display: flex;
     width: 50%;
     height: 2em;
@@ -175,10 +346,12 @@ footer {
     gap: 2em;
     border: 3px solid rgb(191, 0, 255);
     border-radius: 0.4em;
+
+
 }
 
 /* download resume text */
-.downloadresume {
+.home__main__desc__download__link {
 
     text-decoration: none;
     color: white;
@@ -186,83 +359,124 @@ footer {
 
 }
 
-/* the icons at the footer */
-.socials {
-    stroke: aqua;
-    display: flex;
-    gap: 5em;
-    justify-content: center;
-}
 
-.aboutpage {
+
+
+
+
+
+
+/* THE ABOUT PAGE */
+
+
+.about {
     display: flex;
     background: rgb(3, 21, 39);
-    width: 100%;
+    /* changed the width from 100% to vw and vh */
+    width: 100vw;
+    height: 100vh;
     overflow-x: hidden;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
-     position: relative;
+    position: relative;
     color: white;
     text-align: center;
-
-    box-shadow: 2px 2px rgb(3, 21, 39);
     border-radius: 0.6em;
 
 
-    padding-bottom: 1em;
-    margin-bottom: 1em;
-
 }
 
-q {
-    margin-top: 0.5em;
-    font-family: 'Times New Roman', Times, serif;
-    font-style: italic;
-    color: #FFFDD0;
+
+.about__intro {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
-.myvideo {
-    width: 23em;
-    height: 25em;
+.about__intro__header {
+
+    margin: 0px;
+    font-family: Montserrat, sans-serif;
+
+    color: aqua;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 /* the about paragraph */
-.aboutparagraph {
+.about__intro__full {
     font-family: sans-serif, "Times New Roman", Times, serif;
-    line-height: 1.6em;
+    line-height: 1.3em;
     letter-spacing: 1.3px;
 
 }
 
+
+.about__intro__quote {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: #FFFDD0;
+}
+.about__achievements{
+    display: flex;
+    align-content: center;
+    align-self: center;
+    justify-content: space-around;
+    color: aqua;
+    row-gap: 1em;
+    opacity: 0.6;
+
+}
+
+
 /* the learn more text */
-.learnmore {
+.about__desc__more {
     font-family: "sans-serif", Times, serif;
 
 }
 
-.myaboutheader {
-    padding-bottom: 1em;
-    margin: 0px;
-    font-family: Montserrat, sans-serif;
+/* res the video tag  */
 
-    color: aqua;
-    font-weight: 600;
-    letter-spacing: 1px;
+.about__desc__video {
+    width: 65vw;
+    height: 47vw;
 }
 
-/* main skills page */
-.skillspage {
+
+
+
+/* THE SKILLS PAGE */
+.skills {
     display: flex;
     background-color: rgb(3, 21, 39);
-    
+
     flex-wrap: wrap;
     text-align: center;
     color: white;
 
 }
 
-.skillstitle {
+.skills__main {
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    font-family: Montserrat, sans-serif;
+    padding: 0px 1em;
+    margin-bottom: 2em;
+}
+
+.skills__main__whole {
+    display: flex;
+    position: relative;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1em;
+}
+
+.skills__main__whole__header {
 
     margin: 0px;
     font-family: Montserrat, sans-serif;
@@ -270,105 +484,44 @@ q {
     color: aqua;
     font-weight: 600;
     letter-spacing: 1px;
+    margin-bottom: 1rem;
+
 
 }
 
-/* skills page main content */
-.skillsmain {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    color: rgb(255, 255, 255);
-    font-family: Montserrat, sans-serif;
-    margin-bottom: 2em;
+.skills__main__whole__header__subhead {
+    font-size: 1.5rem;
+    color: rgb(126, 144, 142);
+    font-weight: 500;
+    margin: 0em 0em 2rem;
 }
 
-/* the skill icons */
-.skillic {
-    width: 24px;
-    height: 24px;
-}
 
-/* all skills without the text, the frontend, backend and others box*/
-.allskills {
+.skills__main__whole__threeboxes {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 3em;
 }
 
-/* the all photo and the name  without the heading */
-.endlist {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 2em;
-    /* this is the margin to manipulate */
-    margin: 0.02em;
-    align-self: center;
-    margin-bottom: 1em;
-}
-
-/* the three skill boxes */
-.bigskillbox {
-
+.skills__main__whole__threeboxes__everyend {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    gap: 1em;
+    gap: 2em;
     border: 1px solid aqua;
     border-radius: 0.5em;
     min-height: 18em;
-    padding-top: 1.5em;
-    box-shadow: aqua 2px 2px 6px;
-    transition: all 0.5s ease-in-out 0s;
-
+    padding: 1em;
+    box-shadow: aqua 2px 2px 10px;
 }
 
-/* space between table columns */
-.row {
-    display: flex;
-    gap: 0.3em;
-}
-
-/* the individual skill boxes */
-.skillbox {
-    display: flex;
-    width: 28vw;
-    height: 6vh;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 0.2em;
-    padding: 0.1em 0.1em;
-    border: 1px solid aqua;
-    border-radius: 1em;
-    color: rgb(126, 144, 142);
-    cursor: pointer;
-    transition: all 0.3s ease-in-out 0s;
-
-}
-
-/* the some of my working... text */
-.someskills {
-    font-size: 1.125em;
-    color: rgb(126, 144, 142);
-    padding-top: 0.5em;
-    padding-bottom: 0.6em;
-    font-weight: 500;
-    margin: 0px 0px 1em;
-
-}
-
-.endtitle {
+.skills__main__whole__threeboxes__everyendtitle {
     margin: 0px;
-    color: aqua;
-    opacity: 0.5;
-    font-size: 1.375em;
+    color: rgb(126, 144, 142);
+    font-size: 1.375rem;
 }
 
-.frontendlist {
+.skills__main__whole__threeboxes__everyend__wholesmallbox {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -378,23 +531,45 @@ q {
     margin-bottom: 1em;
 }
 
-td {
 
-    margin: auto;
-    padding: 0.1em;
+.skills__main__whole__threeboxes__everyend__wholesmallbox__everyskill {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    /* added this here to align the content when the height is changed */
+    align-content: center;
+    height: 1rem;
+    gap: 0.5em;
+    padding: 0.5em 1em;
+    border: 1px solid aqua;
+    border-radius: 1.5em;
+    color: rgb(126, 144, 142);
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+
+.skills__main__whole__threeboxes__everyend__wholesmallbox__everyskill__skillic {
+    width: 1em;
+    height: 1em;
 }
 
 
 
 
 
-.projectspage {
+
+
+/* THE PROJECTS PAGE */
+.projects {
     display: flex;
     background: rgb(3, 21, 39);
     width: 100%;
     overflow-x: hidden;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
 
     position: relative;
@@ -404,14 +579,14 @@ td {
     border-radius: 2px 2px;
     box-shadow: 2px 2px rgb(3, 21, 39);
     border-radius: 0.6em;
-    
+
     padding-bottom: 1em;
     margin-bottom: 1em;
 
 }
 
 /* the projects header */
-.projectsheader {
+.projects__header {
     margin: 0px;
     font-family: Montserrat, sans-serif;
 
@@ -420,44 +595,14 @@ td {
     letter-spacing: 1px;
 }
 
-/* the list of tools used in the projects */
-.projecttoollist {
-    display: flex;
-    padding: 0;
-    gap: 4em;
-    justify-content: space-around;
-    text-align: center;
+.project__images {
+    /* res changed from px to viewport */
+    width: 50vw;
+    height: 40vh;
+    border-radius: 1em;
 }
 
-/* I changed the list Color */
-ul {
-    list-style: none;
-}
-
-ul li::before {
-    content: "\2022";
-    color: aqua;
-    font-weight: bold;
-    display: inline-block;
-    width: 1em;
-
-}
-
-.projectimages {
-    width: 358px;
-    height: 258px;
-}
-
-.projectdesc {
-    font-family: sans-serif, Times, serif;
-    text-align: center;
-    margin: 0.5em;
-    padding: 0.5em;
-    font-size: 0.95em;
-
-}
-
-.projtitle {
+.project__title {
     margin: 0px;
     font-family: sans-serif, Times, serif;
     padding-top: 1em;
@@ -469,136 +614,62 @@ ul li::before {
 
 }
 
-.contactpage {
+.project__desc {
+    font-family: sans-serif, Times, serif;
+    text-align: center;
+    margin: 0.5em;
+    padding: 0.5em;
+    font-size: 0.95em;
+
+}
+
+/* the list of tools used in the projects */
+.project__toollist {
+    display: flex;
+    padding: 0;
+    gap: 4em;
+    justify-content: space-around;
+    text-align: center;
+    list-style: none;
+}
+
+.project__toollist-item::before {
+    content: "\2022";
+    color: aqua;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+
+}
+
+.projects__audio {
+    padding-top: 2rem;
+}
+
+
+
+
+
+
+/* THE CONTACT PAGE */
+
+.contact {
     display: flex;
     flex-direction: column;
     background-color: rgb(3, 21, 39);
     color: white;
-    justify-content: center;
+    /* justify-content: center; */
     position: relative;
     text-align: center;
     align-items: center;
-   
+
     box-shadow: 2px 2px rgb(3, 21, 39);
     border-radius: 0.6em;
-    
+
 
 }
 
-/* the want to contact text */
-.wantcontact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 300;
-    font-family: sans-serif, Times, serif;
-    margin: 1em;
-}
-
-/* wanted reset link color */
-a:link {
-    text-decoration: none;
-}
-
-/* the svg contact icons */
-.conicon {
-    fill: aqua;
-    width: 28px;
-    height: 28px;
-}
-
-/* the four headers */
-.thelittleheads {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-    color: aqua;
-}
-
-/* the second text */
-.text {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-    color: white;
-    opacity: 0.7;
-
-}
-
-/* the four boxes */
-.conbox {
-    border: 0.05em solid aqua;
-    padding: 0.2em;
-    margin: 0.5em;
-}
-
-/* to address the individual table data */
-
-#telegram,
-#email,
-#phone,
-#location {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 10em;
-    padding-top: 0.5em;
-
-}
-
-/* the two rows of phone and email */
-.phoneemail {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-/* the location and telegram */
-.locationtelegram {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-}
-
-/* the contact form */
-.form {
-    display: flex;
-    flex-direction: column;
-
-}
-
-/* style the contact form */
-input,
-textarea {
-    color: black;
-    opacity: 0.4;
-    width: 15em;
-    margin: 0.5em;
-    padding: 0.5em;
-    border-radius: 0.4em;
-    border: 0.15em solid aqua;
-}
-
-/* the placeholder texts in the contact form */
-::placeholder {
-    color: black;
-}
-
-/* the submit button */
-#submitbutton {
-    border: 0.1em solid rgb(191, 0, 255);
-    color: rgb(191, 0, 255);
-    opacity: 1;
-    background-color: transparent;
-    width: 60%;
-
-}
-
-.contactheader {
+.contact__header {
     padding-top: 1em;
     margin: 0px;
     font-family: Montserrat, sans-serif;
@@ -608,7 +679,115 @@ textarea {
     letter-spacing: 1px;
 }
 
-.portfolio {
-    background-color: #FEFBEA;
-    padding: 0.1em;
+
+/* the want to contact text */
+.contact__header__subhead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    font-family: sans-serif, Times, serif;
+    margin: 2rem;
 }
+
+/* res added table padding */
+.contact__table__table {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    border: 1px solid aqua;
+}
+
+/* the two rows of phone and email */
+.contact__table__row-phone-email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* the location and telegram */
+.contact__table__row-location-telegram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+/* the four boxes */
+.contact__table__conbox {
+    border: 0.05em solid aqua;
+    padding: 0.2em;
+    margin: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 10rem;
+    padding-top: 0.5rem;
+
+}
+
+/* the svg contact icons */
+.contact__table__conbox__conic {
+    fill: aqua;
+    width: 28px;
+    height: 28px;
+}
+
+/* the four headers */
+.contact__table__conbox__header {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: aqua;
+}
+
+/* the second text */
+.contact__table__conbox__text {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: white;
+    opacity: 0.7;
+
+}
+
+/* wanted reset link color */
+.contact__table__conbox__link {
+    text-decoration: none;
+}
+
+
+/* style the contact form */
+.contact__input-fields {
+    color: black;
+    opacity: 0.4;
+    /* res changed the three */
+    width: 15rem;
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+    border-radius: 0.4em;
+    border: 0.15em solid aqua;
+
+}
+
+/* the placeholder texts in the contact form */
+.contact__input-fields::placeholder {
+    color: black;
+}
+
+/* the submit button */
+.contact__submitbutton {
+    border: 0.2em solid rgb(191, 0, 255);
+    border-radius: 0.5em;
+    color: rgb(191, 0, 255);
+    opacity: 1;
+    background-color: transparent;
+    /* res changed from 60% to 15rem */
+    width: 15rem;
+    height: 3rem;
+
+}
+
+

@@ -5,46 +5,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
-    <link rel="stylesheet" href="css\styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <div class="aboutpage">
+    <div class="about">
 
 
     
 
-            <nav class="nav">
-                <span id="inline">Fenet Girma</span> 
-                <div class="subnav">
-                    
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" height="1.5em" width="1.5em" ><g  stroke-width="0" ></g> <g stroke-linecap="round" stroke-linejoin="round"></g> <path d="M4 6H20M4 12H20M4 18H20" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg> 
-                    <div class="subnav-content">
-                        <a href="Home.html">Home</a>
-                        <a href="About.html">About</a>
-                        <a href="Skills.html">Skills</a>
-                        <a href="projects.html">&nbsp;&nbsp;&nbsp;&nbsp;Projects&nbsp;&nbsp;&nbsp;&nbsp;</a>
-                        <a href="contact.html">&nbsp;Contact&nbsp;</a>
-                    </div>
+        <nav class="nav">
+            <span class="nav__brand">Fenet Girma</span>
+            <div class="nav__subnav">
+
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" height="1.5em" width="1.5em">
+                    <g stroke-width="0"></g>
+                    <g stroke-linecap="round" stroke-linejoin="round"></g>
+                    <path d="M4 6H20M4 12H20M4 18H20" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                </svg>
+                <div class="nav__subnav__content">
+                    <a href="Home.html">Home</a>
+                    <a href="About.html">About</a>
+                    <a href="Skills.html">Skills</a>
+                    <a href="projects.html">&nbsp;&nbsp;&nbsp;&nbsp;Projects&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                    <a href="contact.html">&nbsp;Contact&nbsp;</a>
                 </div>
-               
-            
-                
-            </nav>
+            </div>
+
+            <div class="nav__navlist">
+                <a href="Home.html">Home</a>
+                <a href="About.html">About</a>
+                <a href="Skills.html">Skills</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
         
        
 
     <main>
-            <section>
-                <h2 class="myaboutheader">About Me</h2>
-                <p>I am Fenet Girma, a dynamic UI/UX designer driven by a passion for crafting visually striking and
+            <section class="about__intro">
+                <h2 class="about__intro__header">About Me</h2>
+                <p class="about__intro__full">I am Fenet Girma, a dynamic UI/UX designer driven by a passion for crafting visually striking and
                     user-centric digital experiences. With a keen eye for detail, I navigate the complexities of design
                     challenges, collaborating seamlessly with cross-functional teams. I find joy in watching movies and learning new languages. 
-                    <br><q>The future belongs to those who believe in the beauty of their dreams. - Eleanor Roosevelt</q> </p>
+                    <br> </p>
+                <q class="about__intro__quote">The future belongs to those who believe in the beauty of their dreams. - Eleanor Roosevelt</q>
             </section>
-            <section>
-                <h4>To learn more about me, please watch the video provided below.</h4>
-                <video  class="myvideo" autoplay controls>
+
+            <section class="about__achievements">
+                <div class="about__achievements__con">
+                    <h3 class="about__achievements__con__desc">502</h3>
+                    <h3 class="about__achievements__con__name">Projects</h3>
+                </div>
+                <div class="about__achievements__con">
+                    <h3 class="about__achievements__con__desc">12+</h3>
+                    <h3 class="about__achievements__con__name">Years of Experience</h3>
+                </div>
+                <div class="about__achievements__con">
+                    <h3 class="about__achievements__con__desc">450</h3>
+                    <h3 class="about__achievements__con__name"> Happy Customers</h3>
+                </div>
+    
+
+            </section>
+
+            <section class="about__desc">
+                <h4 class="about__desc__more">To learn more about me, please watch the video provided below.</h4>
+                <video  class="about__desc__video" autoplay controls>
                     <source src="ImagesandVideos/Myvideo.mp4" type="video/mp4">
                     Your browser does not support the video.
                 </video>
@@ -53,13 +82,13 @@
     </main>
 
     <footer class="footer">
-        <div class="myfootername">Fenet Girma</div>
+        <div class="footer__name">Fenet Girma</div>
 
-        <div class="socials">
+        <div class="footer__socials">
 
             <div>
                 <a href="https://t.me/fenuItefaq" target="_blank">
-                    <svg class="socials" fill="#00ffff" viewBox="0 0 256 256" id="Flat" xmlns="http://www.w3.org/2000/svg"
+                    <svg class="footer__socials" fill="#00ffff" viewBox="0 0 256 256" id="Flat" xmlns="http://www.w3.org/2000/svg"
                         width="1em" height="1em">
                         <g stroke-width="0"></g>
                         <g stroke-linecap="round" stroke-linejoin="round"></g>
@@ -71,7 +100,7 @@
 
             <div>
                 <a href="https://github.com/FenetGirma" target="_blank">
-                    <svg class="socials" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="1em"
+                    <svg class="footer__socials" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="1em"
                         height="1em">
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                         <g stroke-linecap="round" stroke-linejoin="round"></g>
@@ -86,7 +115,7 @@
 
             <div>
                 <a href="https://www.linkedin.com/in/fenet-girma-6720522a2/" target="_blank">
-                    <svg class="socials" fill="#00ffff" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg" width="1em"
+                    <svg class="footer__socials" fill="#00ffff" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg" width="1em"
                         height="1em">
                         <g stroke-width="0"></g>
                         <g stroke-linecap="round" stroke-linejoin="round"></g>
@@ -95,11 +124,13 @@
                             fill-rule="evenodd"></path>
                     </svg></a>
             </div>
+            <!-- added the line here -->
+            <div class="footer__socials__line"></div>
         </div>
     
 
-        <div class="copyrights">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+        <div class="footer__copyrights">
+            <svg class="footer__copyrights__copyic" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
                 <g stroke-width="0"></g>
                 <g stroke-linecap="round" stroke-linejoin="round"></g>
                 <path

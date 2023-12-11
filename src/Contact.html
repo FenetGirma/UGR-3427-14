@@ -5,17 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link rel="stylesheet" href="css\styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <div class="contactpage">
+    <div class="contact">
         <nav class="nav">
-            <span id="inline">Fenet Girma</span> 
-            <div class="subnav">
-                
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" height="1.5em" width="1.5em" ><g  stroke-width="0" ></g> <g stroke-linecap="round" stroke-linejoin="round"></g> <path d="M4 6H20M4 12H20M4 18H20" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg> 
-                <div class="subnav-content">
+            <span class="nav__brand">Fenet Girma</span>
+            <div class="nav__subnav">
+
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" height="1.5em" width="1.5em">
+                    <g stroke-width="0"></g>
+                    <g stroke-linecap="round" stroke-linejoin="round"></g>
+                    <path d="M4 6H20M4 12H20M4 18H20" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                </svg>
+                <div class="nav__subnav__content">
                     <a href="Home.html">Home</a>
                     <a href="About.html">About</a>
                     <a href="Skills.html">Skills</a>
@@ -23,27 +28,34 @@
                     <a href="contact.html">&nbsp;Contact&nbsp;</a>
                 </div>
             </div>
-           
-        
-            
+
+            <div class="nav__navlist">
+                <a href="Home.html">Home</a>
+                <a href="About.html">About</a>
+                <a href="Skills.html">Skills</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
         </nav>
+        
    
 
     <main>
-
-        <section>
+        
             <hgroup>
-                <h1 class="contactheader">Contact</h1>
+                <h1 class="contact__header">Contact</h1>
 
-                <p class="wantcontact">Want to work with me or just wanted to say hi, <br>feel free to reach out.</p>
+                <p class="contact__header__subhead">Want to work with me or just wanted to say hi, <br>feel free to reach out.</p>
 
             </hgroup>
+          
+            <div class="contact__table">
 
-            <table>
-                <tr class="phoneemail">
-                    <td class="conbox" id="phone">
-                        <a href="tel:+2519703986940" target="_blank">
-                        <svg class="conicon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="1em"
+            <table class="contact__table__table">
+                <tr class="contact__table__row-phone-email">
+                    <td class="contact__table__conbox">
+                        <a class="contact__table__conbox__link" href="tel:+2519703986940" target="_blank">
+                        <svg class="contact__table__conbox__conic" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="1em"
                             height="1em">
                             <g stroke-width="0"></g>
                             <g stroke-linecap="round" stroke-linejoin="round"></g>
@@ -51,65 +63,67 @@
                                     d="M10.0376 5.31617L10.6866 6.4791C11.2723 7.52858 11.0372 8.90532 10.1147 9.8278C10.1147 9.8278 10.1147 9.8278 10.1147 9.8278C10.1146 9.82792 8.99588 10.9468 11.0245 12.9755C13.0525 15.0035 14.1714 13.8861 14.1722 13.8853C14.1722 13.8853 14.1722 13.8853 14.1722 13.8853C15.0947 12.9628 16.4714 12.7277 17.5209 13.3134L18.6838 13.9624C20.2686 14.8468 20.4557 17.0692 19.0628 18.4622C18.2258 19.2992 17.2004 19.9505 16.0669 19.9934C14.1588 20.0658 10.9183 19.5829 7.6677 16.3323C4.41713 13.0817 3.93421 9.84122 4.00655 7.93309C4.04952 6.7996 4.7008 5.77423 5.53781 4.93723C6.93076 3.54428 9.15317 3.73144 10.0376 5.31617Z"
                                     fill="#00ffff"></path>
                         </svg>
-                        <h4 class="thelittleheads">Phone</h4>
-                        <p class="text">(+251) 970386940</p></a>
+                        <h4 class="contact__table__conbox__header">Phone</h4>
+                        <p class="contact__table__conbox__text">(+251) 970386940</p></a>
                     </td>
-                    <td class="conbox" id="email">
-                        <a href="mailto:fenutigist@gmail.com" target="_blank">
-                            <svg class="conicon" fill="#00ffff" version="1.1"  xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 528.633 528.632" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M264.317,326.235c-13.739,0-26.659-5.349-36.371-15.067L0.692,83.914v356.863c0,16.897,13.703,30.601,30.6,30.601h466.044 c16.896,0,30.6-13.703,30.6-30.601V83.92L300.693,311.167C290.977,320.886,278.057,326.235,264.317,326.235z"></path> <path d="M0.692,57.255H0l0.698,0.697l240.229,240.234c6.463,6.457,14.927,9.688,23.391,9.688c8.464,0,16.933-3.231,23.39-9.688 L527.936,57.953l0.697-0.697h-0.697H0.692L0.692,57.255z"></path> </g> </g> </g></svg>
-                        <h4 class="thelittleheads">Email</h4>
-                        <p class="text">fenutigist@gmail.com</p>
+                    <td class="contact__table__conbox">
+                        <a class="contact__table__conbox__link" href="mailto:fenutigist@gmail.com" target="_blank">
+                            <svg class="contact__table__conbox__conic" fill="#00ffff" version="1.1"  xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 528.633 528.632" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M264.317,326.235c-13.739,0-26.659-5.349-36.371-15.067L0.692,83.914v356.863c0,16.897,13.703,30.601,30.6,30.601h466.044 c16.896,0,30.6-13.703,30.6-30.601V83.92L300.693,311.167C290.977,320.886,278.057,326.235,264.317,326.235z"></path> <path d="M0.692,57.255H0l0.698,0.697l240.229,240.234c6.463,6.457,14.927,9.688,23.391,9.688c8.464,0,16.933-3.231,23.39-9.688 L527.936,57.953l0.697-0.697h-0.697H0.692L0.692,57.255z"></path> </g> </g> </g></svg>
+                        <h4 class="contact__table__conbox__header">Email</h4>
+                        <p class="contact__table__conbox__text">fenutigist@gmail.com</p>
                         </a>
                     </td>
                 </tr>
 
 
-                <tr class="locationtelegram">
-                    <td class="conbox" id="location">
-                        <svg class="conicon" width="1em" height="1em" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve" fill="#00ffff"><g  stroke-width="0" ></g><g stroke-linecap="round" stroke-linejoin="round"></g> <path fill="#00ffff" d="M32,0C18.746,0,8,10.746,8,24c0,5.219,1.711,10.008,4.555,13.93c0.051,0.094,0.059,0.199,0.117,0.289l16,24 C29.414,63.332,30.664,64,32,64s2.586-0.668,3.328-1.781l16-24c0.059-0.09,0.066-0.195,0.117-0.289C54.289,34.008,56,29.219,56,24 C56,10.746,45.254,0,32,0z M32,32c-4.418,0-8-3.582-8-8s3.582-8,8-8s8,3.582,8,8S36.418,32,32,32z"></path> </svg>
+                <tr class="contact__table__row-location-telegram">
+                    <td class="contact__table__conbox">
+                        <svg class="contact__table__conbox__conic" width="1em" height="1em" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve" fill="#00ffff"><g  stroke-width="0" ></g><g stroke-linecap="round" stroke-linejoin="round"></g> <path fill="#00ffff" d="M32,0C18.746,0,8,10.746,8,24c0,5.219,1.711,10.008,4.555,13.93c0.051,0.094,0.059,0.199,0.117,0.289l16,24 C29.414,63.332,30.664,64,32,64s2.586-0.668,3.328-1.781l16-24c0.059-0.09,0.066-0.195,0.117-0.289C54.289,34.008,56,29.219,56,24 C56,10.746,45.254,0,32,0z M32,32c-4.418,0-8-3.582-8-8s3.582-8,8-8s8,3.582,8,8S36.418,32,32,32z"></path> </svg>
                         <address>
-                        <h4 class="thelittleheads">Location</h4>
-                        <p class="text"> Alem Gena, Ethiopia</p>
+                        <h4 class="contact__table__conbox__header">Location</h4>
+                        <p class="contact__table__conbox__text"> Alem Gena, Ethiopia</p>
                     </address>
                     </td>
-                    <td class="conbox" id="telegram">
-                        <a href="https://t.me/fenuItefaq" target="_blank">
-                        <svg class="conicon" width="1em" height="1em" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#00ffff"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <title>telegram_fill</title> <g  stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Brand" transform="translate(-672.000000, -48.000000)"> <g id="telegram_fill" transform="translate(672.000000, 48.000000)"> <path d="M24,0 L24,24 L0,24 L0,0 L24,0 Z M12.5934901,23.257841 L12.5819402,23.2595131 L12.5108777,23.2950439 L12.4918791,23.2987469 L12.4918791,23.2987469 L12.4767152,23.2950439 L12.4056548,23.2595131 C12.3958229,23.2563662 12.3870493,23.2590235 12.3821421,23.2649074 L12.3780323,23.275831 L12.360941,23.7031097 L12.3658947,23.7234994 L12.3769048,23.7357139 L12.4804777,23.8096931 L12.4953491,23.8136134 L12.4953491,23.8136134 L12.5071152,23.8096931 L12.6106902,23.7357139 L12.6232938,23.7196733 L12.6232938,23.7196733 L12.6266527,23.7031097 L12.609561,23.275831 C12.6075724,23.2657013 12.6010112,23.2592993 12.5934901,23.257841 L12.5934901,23.257841 Z M12.8583906,23.1452862 L12.8445485,23.1473072 L12.6598443,23.2396597 L12.6498822,23.2499052 L12.6498822,23.2499052 L12.6471943,23.2611114 L12.6650943,23.6906389 L12.6699349,23.7034178 L12.6699349,23.7034178 L12.678386,23.7104931 L12.8793402,23.8032389 C12.8914285,23.8068999 12.9022333,23.8029875 12.9078286,23.7952264 L12.9118235,23.7811639 L12.8776777,23.1665331 C12.8752882,23.1545897 12.8674102,23.1470016 12.8583906,23.1452862 L12.8583906,23.1452862 Z M12.1430473,23.1473072 C12.1332178,23.1423925 12.1221763,23.1452606 12.1156365,23.1525954 L12.1099173,23.1665331 L12.0757714,23.7811639 C12.0751323,23.7926639 12.0828099,23.8018602 12.0926481,23.8045676 L12.108256,23.8032389 L12.3092106,23.7104931 L12.3186497,23.7024347 L12.3186497,23.7024347 L12.3225043,23.6906389 L12.340401,23.2611114 L12.337245,23.2485176 L12.337245,23.2485176 L12.3277531,23.2396597 L12.1430473,23.1473072 Z" id="MingCute" fill-rule="nonzero"> </path> <path d="M19.7773,4.42984 C20.8652,3.97177 22.0315,4.8917 21.8394,6.05639 L19.5705,19.8131 C19.3517,21.1395 17.8949,21.9006 16.678,21.2396 C15.6597,20.6865 14.1489,19.8352 12.7873,18.9455 C12.1074,18.5012 10.0255,17.0766 10.2814,16.0625 C10.5002,15.1954 14.0001,11.9375 16.0001,10 C16.7857,9.23893 16.4279,8.79926 15.5001,9.5 C13.1985,11.2383 9.50332,13.8812 8.28136,14.625 C7.20323,15.2812 6.64031,15.3932 5.96886,15.2812 C4.74273,15.0769 3.60596,14.7605 2.67788,14.3758 C1.42351,13.8558 1.48461,12.132 2.67703,11.63 L19.7773,4.42984 Z" id="路径" fill="#00ffff"> </path> </g> </g> </g> </g></svg>
-                        <h4 class="thelittleheads">Telegram</h4>
-                        <p class="text">@fenuItefaq</p>
+                    <td class="contact__table__conbox">
+                        <a class="contact__table__conbox__link" href="https://t.me/fenuItefaq" target="_blank">
+                        <svg class="contact__table__conbox__conic" width="1em" height="1em" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#00ffff"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <title>telegram_fill</title> <g  stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Brand" transform="translate(-672.000000, -48.000000)"> <g id="telegram_fill" transform="translate(672.000000, 48.000000)"> <path d="M24,0 L24,24 L0,24 L0,0 L24,0 Z M12.5934901,23.257841 L12.5819402,23.2595131 L12.5108777,23.2950439 L12.4918791,23.2987469 L12.4918791,23.2987469 L12.4767152,23.2950439 L12.4056548,23.2595131 C12.3958229,23.2563662 12.3870493,23.2590235 12.3821421,23.2649074 L12.3780323,23.275831 L12.360941,23.7031097 L12.3658947,23.7234994 L12.3769048,23.7357139 L12.4804777,23.8096931 L12.4953491,23.8136134 L12.4953491,23.8136134 L12.5071152,23.8096931 L12.6106902,23.7357139 L12.6232938,23.7196733 L12.6232938,23.7196733 L12.6266527,23.7031097 L12.609561,23.275831 C12.6075724,23.2657013 12.6010112,23.2592993 12.5934901,23.257841 L12.5934901,23.257841 Z M12.8583906,23.1452862 L12.8445485,23.1473072 L12.6598443,23.2396597 L12.6498822,23.2499052 L12.6498822,23.2499052 L12.6471943,23.2611114 L12.6650943,23.6906389 L12.6699349,23.7034178 L12.6699349,23.7034178 L12.678386,23.7104931 L12.8793402,23.8032389 C12.8914285,23.8068999 12.9022333,23.8029875 12.9078286,23.7952264 L12.9118235,23.7811639 L12.8776777,23.1665331 C12.8752882,23.1545897 12.8674102,23.1470016 12.8583906,23.1452862 L12.8583906,23.1452862 Z M12.1430473,23.1473072 C12.1332178,23.1423925 12.1221763,23.1452606 12.1156365,23.1525954 L12.1099173,23.1665331 L12.0757714,23.7811639 C12.0751323,23.7926639 12.0828099,23.8018602 12.0926481,23.8045676 L12.108256,23.8032389 L12.3092106,23.7104931 L12.3186497,23.7024347 L12.3186497,23.7024347 L12.3225043,23.6906389 L12.340401,23.2611114 L12.337245,23.2485176 L12.337245,23.2485176 L12.3277531,23.2396597 L12.1430473,23.1473072 Z" id="MingCute" fill-rule="nonzero"> </path> <path d="M19.7773,4.42984 C20.8652,3.97177 22.0315,4.8917 21.8394,6.05639 L19.5705,19.8131 C19.3517,21.1395 17.8949,21.9006 16.678,21.2396 C15.6597,20.6865 14.1489,19.8352 12.7873,18.9455 C12.1074,18.5012 10.0255,17.0766 10.2814,16.0625 C10.5002,15.1954 14.0001,11.9375 16.0001,10 C16.7857,9.23893 16.4279,8.79926 15.5001,9.5 C13.1985,11.2383 9.50332,13.8812 8.28136,14.625 C7.20323,15.2812 6.64031,15.3932 5.96886,15.2812 C4.74273,15.0769 3.60596,14.7605 2.67788,14.3758 C1.42351,13.8558 1.48461,12.132 2.67703,11.63 L19.7773,4.42984 Z" id="路径" fill="#00ffff"> </path> </g> </g> </g> </g></svg>
+                        <h4 class="contact__table__conbox__header">Telegram</h4>
+                        <p class="contact__table__conbox__text">@fenuItefaq</p>
                     </a>
                     </td>
                 </tr>
             </table>
-        </section>
+        
 
             <form action="/action_page.php">
-                <div class="form"></div>
                 <div>
-                    <input type="text" placeholder="Full Name">
+                    <input class="contact__input-fields" type="text" placeholder="Full Name">
     
                 </div>
                 <div>
-                    <input type="email" placeholder="Email" required>
+                    <input class="contact__input-fields" type="email" placeholder="Email" required>
                 </div>
                
                 <div>
-                    <textarea cols="21" rows="8" placeholder="Your Message"></textarea>
+                    <textarea class="contact__input-fields" cols="21" rows="8" placeholder="Your Message"></textarea>
                 </div>
                 
-                <input id="submitbutton" type="submit" value="Send Message">
+                <input class="contact__submitbutton" type="submit" value="Send Message">
+            
 
             </form>
+        </div>
+ 
     </main>
 
     <footer class="footer">
-        <div class="myfootername">Fenet Girma</div>
+        <div class="footer__name">Fenet Girma</div>
 
-        <div class="socials">
+        <div class="footer__socials">
 
             <div>
                 <a href="https://t.me/fenuItefaq" target="_blank">
-                    <svg class="socials" fill="#00ffff" viewBox="0 0 256 256" id="Flat" xmlns="http://www.w3.org/2000/svg"
+                    <svg class="footer__socials" fill="#00ffff" viewBox="0 0 256 256" id="Flat" xmlns="http://www.w3.org/2000/svg"
                         width="1em" height="1em">
                         <g stroke-width="0"></g>
                         <g stroke-linecap="round" stroke-linejoin="round"></g>
@@ -121,7 +135,7 @@
 
             <div>
                 <a href="https://github.com/FenetGirma" target="_blank">
-                    <svg class="socials" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="1em"
+                    <svg class="footer__socials" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="1em"
                         height="1em">
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                         <g stroke-linecap="round" stroke-linejoin="round"></g>
@@ -136,7 +150,7 @@
 
             <div>
                 <a href="https://www.linkedin.com/in/fenet-girma-6720522a2/" target="_blank">
-                    <svg class="socials" fill="#00ffff" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg" width="1em"
+                    <svg class="footer__socials" fill="#00ffff" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg" width="1em"
                         height="1em">
                         <g stroke-width="0"></g>
                         <g stroke-linecap="round" stroke-linejoin="round"></g>
@@ -145,11 +159,13 @@
                             fill-rule="evenodd"></path>
                     </svg></a>
             </div>
+            <!-- added the line here -->
+            <div class="footer__socials__line"></div>
         </div>
     
 
-        <div class="copyrights">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+        <div class="footer__copyrights">
+            <svg class="footer__copyrights__copyic" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
                 <g stroke-width="0"></g>
                 <g stroke-linecap="round" stroke-linejoin="round"></g>
                 <path
