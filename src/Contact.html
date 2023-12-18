@@ -10,34 +10,30 @@
 
 <body>
     <div class="contact">
-        <nav class="nav">
-            <span class="nav__brand">Fenet Girma</span>
-            <div class="nav__subnav">
-
+        <nav class="navbar">
+                
+            <div class="nav-brand">
+                <span>Fenet Girma </span>
+                 
+                
+            </div> 
+            <div class="hamburger-menu"> 
                 <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" height="1.5em" width="1.5em">
                     <g stroke-width="0"></g>
                     <g stroke-linecap="round" stroke-linejoin="round"></g>
                     <path d="M4 6H20M4 12H20M4 18H20" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round"></path>
                 </svg>
-                <div class="nav__subnav__content">
-                    <a href="Home.html">Home</a>
-                    <a href="About.html">About</a>
-                    <a href="Skills.html">Skills</a>
-                    <a href="projects.html">&nbsp;&nbsp;&nbsp;&nbsp;Projects&nbsp;&nbsp;&nbsp;&nbsp;</a>
-                    <a href="contact.html">&nbsp;Contact&nbsp;</a>
-                </div>
-            </div>
-
-            <div class="nav__navlist">
-                <a href="Home.html">Home</a>
-                <a href="About.html">About</a>
-                <a href="Skills.html">Skills</a>
-                <a href="projects.html">Projects</a>
-                <a href="contact.html">Contact</a>
-            </div>
+                
+            </div> 
+            <div class="nav-menu hide"> 
+                <a href="Home.html">Home</a> 
+                <a href="About.html">About</a> 
+                <a href="Skills.html">Skills</a> 
+                <a href="projects.html">Projects</a> 
+                <a href="Contact.html">Contact</a> 
+            </div> 
         </nav>
-        
    
 
     <main>
@@ -95,21 +91,20 @@
             </table>
         
 
-            <form action="/action_page.php">
+            <form action="">
                 <div>
-                    <input class="contact__input-fields" type="text" placeholder="Full Name">
+                    <input class="contact__input-fields" id="fullname" type="text" placeholder="Full Name">
     
                 </div>
                 <div>
-                    <input class="contact__input-fields" type="email" placeholder="Email" required>
+                    <input class="contact__input-fields" type="email" id="email" placeholder="Email" required>
                 </div>
                
                 <div>
-                    <textarea class="contact__input-fields" cols="21" rows="8" placeholder="Your Message"></textarea>
+                    <textarea id="message" class="contact__input-fields" cols="21" rows="8" placeholder="Your Message"></textarea>
                 </div>
                 
-                <input class="contact__submitbutton" type="submit" value="Send Message">
-            
+                <input class="contact__submitbutton" type="submit" value="Send Message" onclick="redirectToEmail(event);">
 
             </form>
         </div>
@@ -183,7 +178,8 @@
 
     
 </div>
-
+<script src="js/javascript.js"></script>
 </body>
+
 
 </html>
